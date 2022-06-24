@@ -1,0 +1,339 @@
+.calendar,
+.calendar-pick-hour {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    width: max-content;
+    background-color: var(--accent-color);
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.calendar-pick-hour h3,
+.calendar-select-quantity h3 {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.calendar-pick-hour select {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--forms-bg-color);
+    border: none;
+    border-radius: 120px;
+    font-weight: 600;
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar-select-quantity input {
+    cursor: pointer;
+    padding: 1em;
+    text-align: center;
+    width: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--forms-bg-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.calendar-title {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.calendar-title h2 {
+    padding-left: 1em;
+    color: var(--secondary-color);
+    font-size: 2em;
+}
+
+.light .calendar {
+    box-shadow: var(--shadow-color);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.calendar-week-day {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+}
+
+.calendar-week-day div {
+    display: grid;
+    place-items: center;
+    color: var(--text-color);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--text-color);
+}
+
+.calendar-days div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+}
+
+.calendar-days div.not-available {
+    cursor: default;
+}
+
+.calendar-days div span {
+    position: absolute;
+}
+
+.calendar-days div.not-available span {
+    display: none;
+}
+
+.calendar-days div:hover span {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+    width: 2px;
+    height: 0;
+    background-color: var(--text-color);
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+    height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+    bottom: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+    width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.calendar-days div:hover span:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.calendar-days div:hover span:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.calendar-days div:hover span:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+    background-color: #c5871c;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.calendar-days div.not-available,
+.calendar-days div.not-available:hover {
+    color: #333;
+    border-radius: 50%;
+}
+
+.calendar-days div.curr-date span {
+    display: none;
+}
+
+.calendar-day-hover.selected {
+    background-color: #eea830;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.month-picker:hover {
+    background-color: var(--calendar-hover-color);
+}
+
+.year-picker {
+    display: flex;
+    align-items: center;
+}
+
+.year-change {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    bottom: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calendar-pick-hour-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+    display: flex;
+}
+
+.toggle span {
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.month-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    padding: 20px;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    display: grid;
+    transform: scale(1.5);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.month-list.show {
+    transform: scale(1);
+    visibility: visible;
+    pointer-events: visible;
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+    display: grid;
+    place-items: center;
+}
+
+.month-list > div > div {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.month-list > div > div:hover {
+    background-color: var(--calendar-hover-color);
+}
+
+.calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calendar-footer a,
+.calendar-pick-hour-footer a{
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 5em;
+    height: 3em;
+    line-height: 3em;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.calendar-footer a:hover {
+    background-color: var(--main-color);
+    color: var(--background-color);
+    border: 1px solid white;
+}
+
+
+@keyframes to-top {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

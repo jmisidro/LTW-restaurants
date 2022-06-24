@@ -1,0 +1,151 @@
+
+#reservations-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12em;
+}
+
+#reservations-owner {
+    margin-top: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12em;
+}
+
+#reservations-user > p {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: x-large;
+}
+
+#reservations-owner > p {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+}
+
+.reservation{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    padding: 1em;
+    border: 2px solid var(--text-color);
+    border-radius: 2em;
+    background-color: var(--forms-bg-color);
+}
+
+.reservation h2{
+    color: var(--secondary-color);
+}
+
+
+.reservation section{
+    padding: 1em;
+}
+
+
+.reservation .reservation-info #reservation{
+    font-weight: bold;
+}
+
+.reservation .reservation-status{
+    align-self: center;
+}
+
+.reservation .reservation-status h3{
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.reservation.canceled .reservation-status h3{
+    color: var(--error-msg-color);
+}
+
+.reservation .reservation-status h3::first-letter{
+    text-transform: capitalize;
+}
+
+.reservation .reservation-status #estimated-time{
+    font-weight: bold;
+    text-align: center;
+}
+
+.reservation.canceled .reservation-status #estimated-time{
+    display: none;
+}
+
+
+.reservation .reservation-buttons{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+.reservation .reservation-buttons a{
+    background-color: black ;
+    text-decoration: none;
+    color: white;
+    border-radius: 1em;
+    display: block;
+    width: 7em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.reservation .reservation-buttons a:first-child{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.reservation .reservation-buttons a:nth-child(2){
+    margin-bottom: 1em;
+}
+
+.reservation .reservation-buttons .cancel-reservation-button{
+    cursor: pointer;
+    background-color: red;
+}
+
+.reservation .reservation-buttons .reservation-status-select{
+    cursor: pointer;
+    margin-bottom: 1em;
+    background-color: var(--forms-bg-color);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 1em;
+}
+
+.reservation.canceled .reservation-buttons .cancel-reservation-button{
+    cursor: default;
+    background-color: #3d3d3d;
+}
+
+#reservation-return-home{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+}
+
+#reservation-return-home:hover{
+    background-color: var(--main-color);
+    color: var(--background-color);
+    border: 1px solid white;
+}

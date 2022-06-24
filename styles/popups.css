@@ -1,0 +1,201 @@
+#popup-login .overlay,
+#popup-register .overlay,
+#popup-review .overlay,
+#popup-remove-restaurant .overlay,
+#popup-remove-dish .overlay,
+#popup-edit-review .overlay,
+#popup-comment .overlay,
+#popup-checkout-order .overlay,
+#popup-cancel-order .overlay,
+#popup-cancel-reservation .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500vw;
+    height: 500vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#popup-filters .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500vw;
+    height: 500vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#popup-login.active .overlay,
+#popup-register.active .overlay,
+#popup-review.active .overlay,
+#popup-remove-restaurant.active .overlay,
+#popup-remove-dish.active .overlay,
+#popup-checkout-order.active .overlay,
+#popup-edit-review.active .overlay,
+#popup-comment.active .overlay,
+#popup-filters.active .overlay,
+#popup-cancel-order.active .overlay,
+#popup-cancel-reservation.active .overlay {
+    display: block;
+}
+
+.stop-scrolling {
+    overflow: hidden;
+}
+
+#close-login-btn,
+#close-register-btn,
+#close-review-btn,
+#close-comment-form-btn,
+#close-edit-review-btn,
+#close-remove-btn,
+#close-filters-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 120px;
+}
+
+#close-login-btn:hover,
+#close-register-btn:hover,
+#close-review-btn:hover,
+#close-comment-form-btn:hover,
+#close-edit-review-btn:hover,
+#close-remove-btn:hover,
+#close-filters-btn:hover {
+    background-color: var(--main-color);
+    color: var(--background-color);
+    border: 1px solid white;
+}
+
+
+#popup-login .content {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#popup-register .content {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+    
+#popup-edit-review .content,
+#popup-comment .content,
+#popup-review .content {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#popup-remove-restaurant .content,
+#popup-remove-dish .content,
+#popup-cancel-order .content,
+#popup-cancel-reservation .content {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    width: 500px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#popup-checkout-order .content {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#popup-filters .content {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: var(--body-color);
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2em;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#popup-login.active .content,
+#popup-register.active .content,
+#popup-edit-review.active .content,
+#popup-comment.active .content,
+#popup-review.active .content,
+#popup-remove-restaurant.active .content,
+#popup-remove-dish.active .content,
+#popup-checkout-order.active .content,
+#popup-cancel-order.active .content,
+#popup-cancel-reservation.active .content {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup-filters.active .content {
+    top: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}

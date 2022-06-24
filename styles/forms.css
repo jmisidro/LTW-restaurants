@@ -1,0 +1,826 @@
+/*  Search Bar CSS */
+input[name='search'] {
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    border-radius: 120px;
+    background-color: var(--search-bar-color);
+    color: var(--main-color);
+    transition: all .2s ease-in-out;
+
+    padding-left: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+}
+
+.search-filters-restaurants i,
+.search-filters-dishes i,
+.searchrestaurant-profile i,
+.searchdish-profile i,
+.searchorder i,
+.searchreservation i  {
+    position: relative;
+    color: var(--secondary-color);
+    top: 5px;
+    right: 70px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search-filters-restaurants i.filtericon,
+.search-filters-dishes i.filtericon,
+.searchrestaurant-profile i.filtericon,
+.searchdish-profile i.filtericon {
+    transition: all .2s ease-in-out;
+}
+
+.search-filters-restaurants i.filtericon:hover,
+.search-filters-dishes i.filtericon:hover,
+.searchrestaurant-profile i.filtericon:hover,
+.searchdish-profile i.filtericon:hover {
+    color: var(--accent-color);
+}
+
+body.dark .search-filters-restaurants i,
+body.dark .search-filters-dishes i,
+body.dark .searchrestaurant-profile i,
+body.dark .searchdish-profile i,
+body.dark .searchorder i,
+body.dark .searchreservation i  {
+    color: var(--text-color);
+}
+
+/* Header Forms && Buttons */
+
+header #loginbtn,
+header #logoutbtn,
+header #registerbtn {
+    color: var(--secondary-color);
+    background-color: var(--forms-bg-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 120px;
+    width: 100px;
+    height: 35px;
+    line-height: 45px;
+    text-align: center;
+    font-size: larger;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+}
+
+header #loginbtn {
+    padding: 5px 25px;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    margin-right: 0em;
+}
+
+header #logoutbtn {
+    padding: 5px 25px;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 1em;
+}
+
+header #registerbtn {
+    padding: 5px 13px;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+header>form>input {
+    background-color: var(--forms-bg-color);
+    width: 100%;
+    height: 30px;
+    margin: 1em;
+    font-size: larger;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[name='search']:hover,
+input[name='search']:focus {
+    background-color: var(--main-color);
+    color: var(--background-color);
+}
+
+#loginbtn:hover,
+#logoutbtn:hover,
+#registerbtn:hover {
+    background-color: var(--main-color);
+    color: var(--background-color);
+    border: 1px solid white;
+}
+
+/* Login && Register Popup Forms*/
+
+#login form,
+#register form,
+.user-edit-profile form,
+.user-edit-restaurant form,
+.user-edit-dish form,
+.user-add-restaurant form,
+.user-add-dish form {
+    background-color: var(--background-color);
+    width: 50%;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    position: relative;
+    left: 25%;
+}
+
+.user-edit-profile form:first-of-type,
+.user-edit-restaurant form:first-of-type,
+.user-edit-dish form:first-of-type,
+.user-add-restaurant form:first-of-type,
+.user-add-dish form:first-of-type {
+    justify-content: center;
+}
+
+#checkout-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#checkout-order h1 {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#review-edit form,
+#review-comment-form form,
+#review form {
+    background-color: var(--background-color);
+    width: 50%;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 10;
+}
+
+#filters form {
+    background-color: var(--body-color);
+    width: 90%;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 10;
+}
+
+#arrows i:first-of-type {
+    position: relative;
+    color: var(--text-color);
+    bottom: 161px;
+    left: 161px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#arrows i:nth-of-type(2)  {
+    position: relative;
+    color: var(--text-color);
+    bottom: 142px;
+    left: 135px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#arrows i {
+    transition: all .2s ease-in-out;
+}
+
+#arrows i:hover {
+    color: var(--accent-color);
+}
+
+#arrows i.active {
+    color: var(--accent-color);
+}
+
+
+#filters form>label:first-child {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+#filters form>label:nth-child(2) {
+    margin-bottom: 0em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+#filters form>label:nth-child(3) {
+    margin-bottom: 0em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#filters form>label:nth-child(4) {
+    margin-bottom: 0em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+}
+
+#review-edit,
+#review-comment-form h1,
+#register h1,
+#login h1,
+#review h1 {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#remove-restaurant h1,
+#remove-dish h1,
+#cancel-order h1,
+#cancel-reservation h1 {
+    color: var(--text-color);
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 0;
+}
+
+#filters h1 {
+    color: var(--text-color);
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#remove-restaurant p,
+#remove-dish p,
+#cancel-order p,
+#cancel-reservation p {
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form>label {
+    color: var(--text-color);
+}
+
+form>label>input {
+    background-color: var(--forms-bg-color);
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: larger;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+}
+
+form>label:first-child {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+form>label:nth-child(2) {
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+form>label:nth-child(3) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+form>label:nth-child(4) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+form>select {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--forms-bg-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    border: none;
+    border-radius: 120px;
+    font-weight: 600;
+}
+
+#popup-filters select {
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--forms-bg-color);
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#category-input {
+    background-color: var(--forms-bg-color);
+    width: 55%;
+    height: 25px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 120px;
+}
+
+form>button,
+#upload {
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: black;
+    color: white;
+    width: 8em;
+    height: 3em;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+form>button[formaction='../actions/action_edit_dish.php'],
+form>button[formaction='../actions/action_add_dish.php'] {
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: black;
+    color: white;
+    width: 8em;
+    height: 3em;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+form>input[name='image'] {
+    position: relative;
+    left: -15px;
+    font-weight: 600;
+    padding: 5px;
+    color: black;
+    background-color: var(--forms-bg-color);
+    box-shadow: 3px 3px 10px var(--shadow-color);
+    border-radius: 120px;
+}
+
+::-webkit-file-upload-button {
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    padding: 15px;
+    border: none;
+    box-shadow: 1px 0 1px 1px var(--shadow-color);
+    border-radius: 120px;
+}
+
+#upload {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#switch-usertype {
+    position: relative;
+    bottom: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.user-profile h1,
+.user-edit-profile h1,
+.user-edit-restaurant h1,
+.user-edit-dish h1,
+.user-add-restaurant h1,
+.user-add-dish h1 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.user-profile p,
+.user-edit-profile p,
+.user-edit-dish p,
+.user-edit-restaurant p,
+.user-add-restaurant p,
+.user-add-dish p {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.user-profile img,
+.user-edit-profile img,
+.user-edit-dish img,
+.user-edit-restaurant img,
+.user-add-restaurant img,
+.user-add-dish img {
+    display: block;
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.user-profile p:last-of-type {
+    margin-bottom: 2em;
+}
+
+#edit-profile-btn {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+#remove-restaurant-btn {
+    text-align: center;
+    justify-self: end;
+    width: 14em;
+    height: 3em;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    line-height: 3em;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+#remove-dish-btn {
+    text-align: center;
+    justify-self: end;
+    width: 14em;
+    height: 3em;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    line-height: 3em;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#remove-cancel {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    transition: all .2s ease-in-out;
+}
+
+#view-order{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    transition: all .2s ease-in-out;
+}
+
+
+#remove-submit {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    height: 3em;
+    line-height: 40px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+
+#go-back {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+    width: 8em;
+    height: 3em;
+    background-color: var(--accent-color);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 120px;
+}
+
+#dishes article .shop-item-button,
+#dishes article .favorite-item-button,
+#dishes article .favorite-remove-item-button,
+#dishes article form button.favorite-remove-item-profile-button{
+    text-shadow: none;
+    align-self: end;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+}
+
+#Dish_info_buttons {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    
+}
+
+#Dish_info .shop-item-button,
+#Dish_info .favorite-item-button,
+#Dish_info .favorite-remove-item-button {
+    text-shadow: none;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+}
+
+#make-reservation {
+    text-align: center;
+    display: block;
+    width: 13em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 4em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+form>button:hover,
+#upload:hover,
+#view-order:hover,
+#switch-usertype:hover,
+#edit-profile-btn:hover,
+#restaurants article button:hover,
+#dishes-edit article button:hover,
+#restaurants-orders-owner article a.show-orders-buttons:hover,
+#restaurants-reservations-owner article a.show-reservations-buttons:hover,
+#make-reservation:hover,
+#dishes article .shop-item-button:hover,
+#Dish_info .shop-item-button:hover,
+#Dish_info .favorite-item-button:hover{
+    background-color: var(--main-color);
+    color: var(--background-color);
+    border: 1px solid white;
+}
+
+#restaurants article #edit-id,
+#dishes-edit article #edit-id,
+#restaurants article #remove-id,
+#dishes article #remove-id,
+#cancel-order-id,
+#cancel-order-id,
+#cancel-reservation-id {
+    display: none;
+}
+
+#restaurants article button,
+#dishes-edit article button {
+    align-self: end;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: 220px;
+}
+
+#restaurants-orders-owner article a.show-orders-buttons{
+    text-shadow: 0px 0px;
+    align-self: end;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: -20px;
+}
+
+#restaurants-reservations-owner article a.show-reservations-buttons{
+    text-shadow: 0px 0px;
+    align-self: end;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    height: 3em;
+    line-height: 3em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: -20px;
+}
+
+.user-edit-dish #edit-dish-id {
+    display: none;
+}

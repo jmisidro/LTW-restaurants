@@ -1,0 +1,469 @@
+@media (max-width: 30em) {
+
+    body {
+        width: auto;
+    }
+
+    #Rest_info img,
+    .user-edit-dish img,
+    .user-edit-restaurant img,
+    .user-add-dish img,
+    .user-add-restaurant img {
+        max-width: 22em;
+    }
+
+    body main {
+        margin-top: 16em;
+    }
+
+    #messages {
+        top: 175px;
+    }
+
+    nav .nav-bar .sidebarOpen {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        font-size: 24px;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 240px;
+        right: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--nav-color);
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    .nav-bar .nav-links li:first-child {
+        padding-left: 0em;
+    }
+
+    .nav-bar .nav-links li:nth-child(5) {
+        padding-left: 0em;
+    }
+
+    body>header h1 {
+        padding-left: 0px;
+        font-size: 2em;
+    }
+
+    header #loginbtn {
+        line-height: 25px;
+        margin-top: 1em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    header #logoutbtn {
+        padding: 5px 20px;
+        line-height: 25px;
+        margin-top: 1em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    header #registerbtn {
+        line-height: 25px;
+        margin-top: 1em;
+        margin-bottom: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    nav.active .menu {
+        right: -0%;
+    }
+
+    .logo a,
+    .siderbarOpen,
+    .siderbarClose {
+        visibility: visible;
+    }
+
+    nav.active .nav-bar .navLogo a {
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu .logo-toggle {
+        display: block;
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .siderbarClose {
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-links {
+        flex-direction: column;
+        position: absolute;
+        margin-left: 1em;
+        top: 100px;
+    }
+
+    .nav-links li a {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .nav-bar .nav-buttons {
+        flex-direction: column;
+        position: absolute;
+        margin-left: 2em;
+        top: 270px;
+    }
+
+    .nav-bar .nav-links.loggedin {
+        padding-left: 20px;
+    }
+
+    .nav-bar .nav-buttons.loggedin {
+        top: 400px;
+    }
+
+    .nav-buttons li a {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .Restaurant_header h2,
+    .Dishes_header h2,
+    #restaurant_name,
+    .Order_header h2,
+    .Reservation_header h2{
+        padding-left: 0em;
+        font-size: 1.5em;
+    }
+
+    .Dishes_header {
+        margin-top: 6em;
+    }
+
+    .Dishes_header h2 {
+        margin-top: 0em;
+    }
+
+    #searchrestaurant,
+    #searchdish,
+    #searchorder,
+    #searchreservation {
+        width: 160px;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    #searchrestaurant-profile,
+    #searchdish-profile {
+        width: 160px;
+        margin-left: -7em;
+        margin-right: 0em;
+    }
+
+    .search-filters-restaurants i.filtericon {
+        top: -20px;
+        left: 150px;
+    }
+
+    .search-filters-dishes i.filtericon {
+        top: -50px;
+        left: 200px;
+    }
+
+    .search-filters-restaurants i.searchicon,
+    .search-filters-dishes i.searchicon,
+    .searchrestaurant-profile i.searchicon,
+    .searchdish-profile i.searchicon,
+    .searchorder i.searchicon,
+    .searchreservation i.searchicon {
+        visibility: hidden;
+    }
+
+
+    #popup-login .content,
+    #popup-register .content,
+    #popup-review .content,
+    #popup-remove-restaurant .content,
+    #popup-remove-dish .content,
+    #popup-cancel-order .content,
+    #popup-cancel-reservation .content {
+        width: 400px;
+    }
+
+    #popup-cancel-order.active .content,
+    #popup-cancel-reservation.active .content{
+        position: relative;
+        bottom: 250px;
+    }
+
+    #popup-login.active .content,
+    #popup-register.active .content {
+        position: absolute;
+    }
+
+    #login form {
+        left: 20%;
+    }
+
+    #register form {
+        left: 15%;
+    }
+
+    #popup-review.active .content {
+        position: relative;
+        bottom: 100vh;
+    }
+
+    #popup-remove-restaurant.active .content,
+    #popup-remove-dish.active .content  {
+        position: absolute;
+        top: 100vh;
+    }
+
+    #review form {
+        margin-top: 0em;
+    }
+
+
+    #edit-profile-btn,
+    #remove-restaurant-btn {
+        margin-bottom: 6em;
+    }
+
+    form>button[name='add'] {
+        position: relative;
+        bottom: 70px;
+        right: 30px;
+    }
+
+    .user-edit-dish form,
+    .user-edit-restaurant form {
+        left: 0px;
+    }
+
+    form>input[name='image'] {
+        left: 10px;
+    }
+
+    #review h1 {
+        margin-top: 2em;
+    }
+
+    .starrate {
+        right: 80px;
+    }
+
+    #review-text {
+        width: 300px;
+    }
+
+    #review-submit {
+        left: 35%;
+    }
+
+    .reviews article .info {
+        color: var(--accent-color);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .reviews article h3 {
+        color: black;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .reviews .info p {
+        padding-left: 0em;
+        bottom: 5px;
+    }
+
+
+    /* Orders */
+
+    #orders-user .order,
+    #orders-owner .order {
+        width: 74%;
+    }
+
+    .order section.order-status,
+    .order section.order-buttons {
+        padding: 0em;
+    }
+
+    .order section.order-buttons {
+        position: relative;
+        right: 100px;
+    }
+
+    .order section.order-status {
+        align-self: flex-start;
+        position: relative;
+        left: 35px;
+        bottom: 15px;
+    }
+
+    .order .order-status #estimated-time {
+        display: none;
+    }
+
+    /* Reservations */
+
+    #make-reservation {
+        position: absolute;
+        top: 250px;
+        right: 20px;
+    }
+
+    #reservations-user .reservation,
+    #reservations-owner .reservation {
+        width: 74%;
+    }
+
+
+    .reservation section.reservation-status,
+    .reservation section.reservation-buttons {
+        padding: 0em;
+    }
+
+    .reservation section.reservation-status {
+        align-self: flex-start;
+        position: relative;
+        left: 60px;
+        bottom: 15px;
+    }
+
+    .reservation section.reservation-buttons {
+        position: relative;
+        right: 70px;
+        top: 100px;
+    }
+
+
+    .reservation.canceled section.reservation-status {
+        left: 0px;
+    }
+
+    .reservation.canceled section.reservation-buttons {
+        right: 135px;
+    }
+
+    .reservation .reservation-status #estimated-time {
+        display: none;
+    }
+
+    /* Reservations: Calendar */
+
+    section.calendar {
+        width: 300px;
+        padding: 30px;
+    }
+
+    section.month-list {
+        padding: 0px;
+    }
+
+    section.calendar-body {
+        padding: 0px;
+    }
+
+    section.calendar-days {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    section.calendar-pick-hour {
+        padding: 0px;
+    }
+
+    /* Cart */
+    section.cart{
+        padding: 0em;
+    }
+    .cart-order{
+        min-width: 100%;
+    }
+
+    .cart-order .indicators p{
+        min-width: 100px;
+    }
+    .cart-order section.cart-item{
+        padding: 1em;
+        width: 300px;
+    }
+
+    .cart-order .cart-item img{
+        left: -100px;
+    }
+    .cart-order .indicators{
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    section.cart-order-button {
+        justify-content: center;
+    }
+    
+
+    .order-summary{
+        min-width: 80%;
+    }
+    
+    .shop-item-quantity.active {
+        display: none;
+    }
+
+}
+
+@media (max-height: 50em) {
+
+    body>header {
+        padding: 1em 1em;
+    }
+
+    #popup-login .content,
+    #popup-register .content,
+    #popup-review .content,
+    #popup-remove-restaurant .content,
+    #popup-remove-dish .content,
+    #popup-cancel-order .content,
+    #popup-cancel-reservation .content {
+        height: 400px;
+    }
+
+    #popup-register .content {
+        height: 470px;
+    }
+
+    #popup-login.active .content, #popup-register.active .content, #popup-edit-review.active .content, #popup-comment.active .content, #popup-review.active .content, #popup-remove-restaurant.active .content, #popup-remove-dish.active .content, #popup-checkout-order.active .content, #popup-cancel-order.active .content, #popup-cancel-reservation.active .content, #popup-filters.active .content {
+        top: 65%;
+    }
+
+    #popup-filters .content {
+        top: 80%;
+    }
+
+    #arrows i:first-of-type {
+        bottom: 121px;
+    }
+
+    #arrows i:nth-of-type(2) {
+        bottom: 102px;
+    }
+}
