@@ -1,3 +1,7 @@
+# LTW-Restaurants
+
+`A simple website for restaurants to advertize and sell their products directly to the customer`
+
 ## Features
 
 - [x] Register
