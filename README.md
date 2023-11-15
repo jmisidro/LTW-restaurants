@@ -2,6 +2,8 @@
 
 `A simple website for restaurants to advertize and sell their products directly to the customer`
 
+### Project Grade: 18.9/20
+
 ## Features
 
 - [x] Register
