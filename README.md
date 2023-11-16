@@ -1,4 +1,6 @@
 # LTW-Restaurants
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Uporto FEUP](https://img.shields.io/badge/UPorto-FEUP-brown)](FEUP)
 
 `A simple website for restaurants to advertize and sell their products directly to the customer`
 
